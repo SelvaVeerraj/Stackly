@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomeLoanGurus Clone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0f2f53;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #dde6f0;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .logo {
+      font-weight: bold;
+      color: #0f2f53;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .login-btn {
+      background-color: #3399ff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px 200px;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      max-width: 800px;
+      margin: 0 auto 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #cde1f3;
+    }
+
+    .btn-primary {
+      margin-top: 30px;
+      padding: 12px 30px;
+      background-color: #3399ff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .badge {
+      position: absolute;
+      background: white;
+      color: #0f2f53;
+      padding: 20px;
+      border-radius: 20px;
+      width: 200px;
+      font-weight: bold;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      animation: float 2s ease-in-out infinite;
+    }
+
+    .badge-left {
+      left: 10%;
+      bottom: -50px;
+    }
+
+    .badge-right {
+      right: 10%;
+      bottom: -50px;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 30px 30px 0 0;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+      .badge {
+        display: none;
+      }
+    }
+
+    .what-we-do {
+      background-color: #f6f7fb;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .what-we-do-container {
+      position: relative;
+      max-width: 1300px;
+      margin: 0 auto;
+      border-radius: 30px;
+      overflow: hidden;
+      background-color: #14365c;
+      padding-bottom: 0;
+    }
+
+    .main-house-image {
+      width: 100%;
+      display: block;
+      border-radius: 0 0 30px 30px;
+      margin-top: -50px;
+    }
+
+    .badge-bottom-left {
+      position: absolute;
+      top: 40px;
+      left: 30px;
+      background-color: #fff;
+      padding: 20px 25px;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      gap: 15px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .badge-bottom-left img {
+      width: 40px;
+      height: auto;
+    }
+
+    .badge-bottom-left span {
+      font-size: 20px;
+      font-weight: 500;
+      color: #222;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 60px auto 0;
+    }
+
+    .content h2 {
+      font-size: 40px;
+      color: #1a1a1a;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 20px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .info-section {
+      background-color: #f4f5f7;
+      padding: 80px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .info-box {
+      background: white;
+      border-radius: 30px;
+      padding: 40px;
+      width: 500px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .info-box h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #111;
+    }
+
+    .info-box p {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    .info-box img {
+      width: 100%;
+      height: auto;
+      margin-top: auto;
+    }
+
+    .btn-info {
+      background-color: #3399ff;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+      align-self: flex-start;
+    }
+
+    .credit-tools {
+      background-color: #0f2f53;
+      color: #fff;
+      padding: 100px 40px;
+      border-radius: 30px;
+      margin: 60px auto;
+      max-width: 1600px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .credit-tools h2 {
+      font-size: 38px;
+      margin-bottom: 20px;
+    }
+
+    .credit-tools p {
+      font-size: 20px;
+      color: #e2eaf2;
+      max-width: 600px;
+    }
+
+    .tool-btn {
+      margin-top: 30px;
+      padding: 12px 30px;
+      background-color: #3399ff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .tool-box {
+      position: absolute;
+      right: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      top: 40px;
+    }
+
+    .tool-item {
+      background: white;
+      color: #0f2f53;
+      padding: 20px 30px;
+      border-radius: 15px;
+      font-weight: 500;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .testimonials {
+      background-color: #f6f7fb;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      font-size: 40px;
+      color: #1a1a1a;
+      margin-bottom: 40px;
+    }
+
+    .testimonial-slider {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      padding: 20px 0;
+    }
+
+    .testimonial-slider::-webkit-scrollbar {
+      display: none;
+    }
+
+    .testimonial-card {
+      background: #fff;
+      color: #111;
+      border-radius: 20px;
+      padding: 30px;
+      min-width: 300px;
+      max-width: 350px;
+      scroll-snap-align: start;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+    }
+
+    .testimonial-card .stars {
+      color: #ffcc00;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .testimonial-card p {
+      font-size: 16px;
+      color: #444;
+    }
+
+    .testimonial-card .name {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    .testimonial-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 20px 0;
+}
+
+  </style>
+</head>
+<body>
+  <!-- previous content -->
+
+  <!-- Credit Monitoring Section -->
+  <section class="credit-tools">
+    <h2>Credit Monitoring Tools</h2>
+    <p>As part of your rent reporting services, you also have access to credit monitoring services to track the progress of your credit score.</p>
+    <button class="tool-btn">Learn More</button>
+    <div class="tool-box">
+      <div class="tool-item">📄 Report your rent</div>
+      <div class="tool-item">🎯 Monitor your progress</div>
+      <div class="tool-item">🏡 Purchase a home</div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>Customer Testimonials</h2>
+    <div class="testimonial-slider" id="testimonialSlider">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>Bernie is always knowledgeable and helpful! HomeLoanGurus are helping me reach my goal!</p>
+        <div class="name">Paula S</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>Very responsive & on time. Ethical & honest. She’s a keeper!</p>
+        <div class="name">Karem L H</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>My experience with Home Loan Gurus has been amazing. Attentive and quick to respond.</p>
+        <div class="name">Kiva T</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>This company helped us find a way. Highly recommend them!</p>
+        <div class="name">Daniel F</div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const slider = document.getElementById('testimonialSlider');
+    let scrollPos = 0;
+    const scrollStep = 1;
+    const scrollInterval = 30;
+
+    function autoScroll() {
+      scrollPos += scrollStep;
+      if (scrollPos >= slider.scrollWidth - slider.clientWidth) {
+        scrollPos = 0;
+      }
+      slider.scrollTo({ left: scrollPos, behavior: 'smooth' });
+    }
+
+    setInterval(autoScroll, scrollInterval);
+  </script>
+</body>
+</html>
