@@ -283,17 +283,17 @@
 
       .tool-box {
         position: absolute;
-        right: 40px;
+        right: 250px;
         display: flex;
         flex-direction: column;
         gap: 60px;
-        top: 40px;
+        top: 120px;
       }
 
       .tool-item {
         background: white;
         color: #0f2f53;
-        padding: 20px 30px;
+        padding: 20px 80px;
         border-radius: 15px;
         font-weight: 500;
         font-size: 18px;
@@ -591,6 +591,123 @@
           font-size: 14px;
         }
       }
+
+      .learning-hub {
+  background-color: #f6f7fb;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.learning-hub h2 {
+  font-size: 42px;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.hub-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.hub-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 360px;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+ul{
+  color: black;
+}
+h4{
+  color: #292828;
+}
+.hub-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.meta {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #eef1f5;
+  color: #222;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #111;
+}
+
+.card-content p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.card-content a {
+  color: #111;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.card-content a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .hub-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hub-card {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .learning-hub h2 {
+    font-size: 28px;
+  }
+
+  .card-content h3 {
+    font-size: 18px;
+  }
+
+  .card-content p {
+    font-size: 14px;
+  }
+
+  .card-content a {
+    font-size: 14px;
+  }
+}
 
       .faq-section {
         background-color: #0f3259;
@@ -928,7 +1045,7 @@
           <br /><br />
           <br />
         </p>
-        <button class="btn-info">Learn More</button>
+        <button class="btn-info">Learn More</button><br><br>
         <img src="side-view-man-working-with-computer.jpg" alt="Buy a Home" />
       </div>
     </section>
@@ -936,16 +1053,23 @@
     <!-- previous content -->
 
     <!-- Credit Monitoring Section -->
-  <section class="credit-tools">
-    <h2>Why Choose Us</h2>
-    <p>When you choose me for your digital marketing needs, you’re choosing a dedicated partner who’s focused on delivering results. I take the time to understand your business, your audience, and your goals to create customized strategies that drive real engagement and conversions. Whether it’s SEO, social media, content marketing, or paid ads, I blend creativity with data to make sure every campaign moves the needle.</p>
-    <button class="tool-btn">Learn More</button>
-    <div class="tool-box">
-      <div class="tool-item">📄 Strategy</div>
-      <div class="tool-item">🎯 Audience</div>
-      <div class="tool-item">🏡 Keyword</div>
-    </div>
-  </section>
+    <section class="credit-tools">
+      <h2>Why Choose Us</h2>
+      <p>
+        When you choose me for your digital marketing needs, you’re choosing a
+        dedicated partner who’s focused on delivering results. I take the time
+        to understand your business, your audience, and your goals to create
+        customized strategies that drive real engagement and conversions.
+        Whether it’s SEO, social media, content marketing, or paid ads, I blend
+        creativity with data to make sure every campaign moves the needle.
+      </p>
+      <button class="tool-btn">Learn More</button>
+      <div class="tool-box">
+        <div class="tool-item">📄 Strategy</div>
+        <div class="tool-item">🎯 Audience</div>
+        <div class="tool-item">🏡 Keyword</div>
+      </div>
+    </section>
     <!-- Testimonials Section -->
     <section class="testimonials">
       <h2>Customer Testimonials</h2>
@@ -1010,60 +1134,137 @@
         <!-- Card 1 -->
         <div class="hub-card">
           <img
-            src="web-design-technology-browsing-programming-concept.jpg"
+            src="stack5.jpg"
             alt="Down Payment Assistance"
           />
           <div class="card-content">
             <div class="meta">
-              <span class="tag">HOME BUYING</span>
+              <span class="tag">Email Marketing</span>
               <span class="date">April 19, 2024</span>
             </div>
-            <h3>Down Payment Assistance To Purchase A Home</h3>
-            <p>
-              HomeLoanGurus' preferred lender partner, Cardinal Financial is
-              offering a down payment assistance program for first time home
-              buyers. Qualification are...
-            </p>
+            <h3>
+              Email Marketing
+            </h3>
+            <ul>
+              <li>Campaign Strategy & Audience Segmentation</li>
+              <li>Email Design & Content Creation</li>
+              <li>Automation & Workflow Setup</li>
+              <li>Performance Tracking & Optimization</li><br>
+              <li style="list-style: none; position: relative;"><span style="position: absolute; left: -1em;">★</span> Logo Design, Promotions &amp; Advertising</li>
+            </ul>
+            
             <a href="#">Read More →</a>
           </div>
         </div>
 
         <!-- Card 2 -->
         <div class="hub-card">
-          <img src="Digital-Marketing-2.jpg" alt="FICO Score" />
+          <img src="stack4.jpg" alt="FICO Score" />
           <div class="card-content">
             <div class="meta">
-              <span class="tag">CREDIT IMPROVEMENT</span>
+              <span class="tag">PPC</span>
               <span class="date">April 16, 2024</span>
             </div>
-            <h3>Difference Between Vantage Scores and FICO Scores</h3>
-            <p>
-              Learn the differences between a Vantage credit score and a FICO
-              credit score.
-            </p>
+            <h3>Pay-Per-Click (PPC)</h3>
+            <ul>
+              <li>Google Ads (Search, Display, Shopping)</li>
+              <li>Campaign setup & optimization</li>
+              <li>Landing page creation & A/B testing</li>
+              <li>Analytics & ROI tracking</li><br>
+              <li style="list-style: none; position: relative;"><span style="position: absolute; left: -1em;">★</span> Logo Design, Promotions &amp; Advertising</li>
+            </ul>
             <a href="#">Read More →</a>
           </div>
         </div>
 
         <!-- Card 3 -->
         <div class="hub-card">
-          <img src="5779797.jpg" alt="Credit Monitoring Tools" />
+          <img src="stack6.jpg" alt="Credit Monitoring Tools" />
           <div class="card-content">
             <div class="meta">
-              <span class="tag">RENT REPORTING</span>
+              <span class="tag">SEO</span>
               <span class="date">April 4, 2024</span>
             </div>
-            <h3>Benefits Of HomeLoanGurus' Credit Monitoring Tools</h3>
-            <p>
-              HomeLoanGurus offers credit monitoring tools so you can track the
-              increases or decreases of your credit score as you prepare to
-              purchase a home.
-            </p>
+            <h3>Search Engine Optimization (SEO)</h3>
+            <ul>
+              <li>On-page & off-page SEO</li>
+              <li>Keyword research & content strategy</li>
+              <li>Technical SEO audits</li>
+              <li>Local SEO for increased visibility</li><br>
+              <li style="list-style: none; position: relative;"><span style="position: absolute; left: -1em;">★</span> Logo Design, Promotions &amp; Advertising</li>
+            </ul>
             <a href="#">Read More →</a>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="learning-hub">
+      <div class="hub-grid">
+        <!-- Card 1 -->
+        <div class="hub-card">
+          <img src="stcak1.jpg" alt="Down Payment Assistance">
+          <div class="card-content">
+            <div class="meta">
+              <span class="tag">SMM</span>
+              <span class="date">April 19, 2024</span>
+            </div>
+            <h3>Social Media Marketing (SMM)</h3>
+            <ul>
+              <li>Strategy & content creation</li>
+              <li>Paid ad campaigns (Facebook, Instagram, LinkedIn, X)</li>
+              <li>Community management & growth</li>
+              <li>Influencer collaborations</li><br>
+              <li style="list-style: none; position: relative;"><span style="position: absolute; left: -1em;">★</span> Logo Design, Promotions &amp; Advertising</li>
+            </ul>
+            <a href="#">Read More →</a>
+          </div>
+        </div>
+    
+        <!-- Card 2 -->
+        <div class="hub-card">
+          <img src="stack3.jpg" alt="FICO Score">
+          <div class="card-content">
+            <div class="meta">
+              <span class="tag">Optimization</span>
+              <span class="date">April 16, 2024</span>
+            </div>
+            <h3>Analytics & Conversation Rate Optimization</h3>
+            <ul>
+              <li>User behavior tracking (GA4, Hotjar)</li>
+              <li>Funnel analysis & optimization</li>
+              <li>Automation & Workflow Setup</li>
+              <li>Performance Tracking & Optimization</li><br>
+              <li style="list-style: none; position: relative;"><span style="position: absolute; left: -1em;">★</span> Logo Design, Promotions &amp; Advertising</li>
+            </ul>
+            <a href="#">Read More →</a>
+          </div>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="hub-card">
+          <img src="stack2.jpg" alt="Credit Monitoring Tools">
+          <div class="card-content">
+            <div class="meta">
+              <span class="tag">GMB</span>
+              <span class="date">April 4, 2024</span>
+            </div>
+            <h3>Google My Business (GMB)</h3>
+            <h4>Experienced Professionals: Our team brings years of expertise to ensure quality and satisfaction.</h4><br>
+            <ul>
+              <li>Customer-Centric Approach</li>
+              <li>Affordable Pricing</li>
+              <li>Quick & Reliable Service</li>
+              <li>Locally Trusted</li>
+              <li>Excellent Reviews</li><br>
+              <li style="list-style: none; position: relative;"><span style="position: absolute; left: -1em;">★</span> Logo Design, Promotions &amp; Advertising</li>
+            </ul>
+            <a href="#">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
 
     <section class="faq-section">
       <div class="faq-container">
