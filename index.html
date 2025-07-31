@@ -133,7 +133,7 @@
         }
       }
 
-      @media (max-width: 426px){
+      @media (max-width: 426px) {
         .hero h1 {
           font-size: 32px;
         }
@@ -255,6 +255,7 @@
         font-size: 16px;
         margin-top: 20px;
         align-self: flex-start;
+        margin-bottom: 20px;
       }
 
       .credit-tools {
@@ -313,62 +314,62 @@
       }
 
       @media (max-width: 1200px) {
-      .tool-box {
-        right: 80px;
-        top: 120px;
-        gap: 40px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .credit-tools {
-        padding: 60px 30px;
+        .tool-box {
+          right: 80px;
+          top: 120px;
+          gap: 40px;
+        }
       }
 
-      .credit-tools h2 {
-        font-size: 30px;
+      @media (max-width: 768px) {
+        .credit-tools {
+          padding: 60px 30px;
+        }
+
+        .credit-tools h2 {
+          font-size: 30px;
+        }
+
+        .credit-tools p {
+          font-size: 18px;
+        }
+
+        .tool-box {
+          position: static;
+          margin-top: 40px;
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .tool-item {
+          padding: 15px 30px;
+          font-size: 16px;
+        }
       }
 
-      .credit-tools p {
-        font-size: 18px;
-      }
+      @media (max-width: 480px) {
+        .credit-tools {
+          padding: 50px 20px;
+        }
 
-      .tool-box {
-        position: static;
-        margin-top: 40px;
-        flex-direction: column;
-        gap: 20px;
-      }
+        .credit-tools h2 {
+          font-size: 26px;
+        }
 
-      .tool-item {
-        padding: 15px 30px;
-        font-size: 16px;
-      }
-    }
+        .credit-tools p {
+          font-size: 16px;
+        }
 
-    @media (max-width: 480px) {
-      .credit-tools {
-        padding: 50px 20px;
-      }
+        .tool-item {
+          padding: 12px 20px;
+          font-size: 15px;
+        }
 
-      .credit-tools h2 {
-        font-size: 26px;
+        .tool-btn {
+          font-size: 14px;
+          padding: 10px 20px;
+        }
       }
-
-      .credit-tools p {
-        font-size: 16px;
-      }
-
-      .tool-item {
-        padding: 12px 20px;
-        font-size: 15px;
-      }
-
-      .tool-btn {
-        font-size: 14px;
-        padding: 10px 20px;
-      }
-    }
 
       .testimonials {
         background-color: #f6f7fb;
@@ -450,21 +451,21 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 400px;        
+        min-height: 400px;
       }
 
       .score-badge {
         position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #1e90ff;
-  color: #fff;
-  padding: 10px 30px;
-  border-radius: 20px 20px 20px 20px;
-  font-weight: bold;
-  z-index: 10;
-  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #1e90ff;
+        color: #fff;
+        padding: 10px 30px;
+        border-radius: 20px 20px 20px 20px;
+        font-weight: bold;
+        z-index: 10;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
       }
 
       .score-badge h1 {
@@ -529,17 +530,16 @@
 
         .score-badge {
           position: absolute;
-      top: -30px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #1e90ff;
-      color: #fff;
-      padding: 8px 20px;
-      border-radius: 20px 20px 20px 20px;
-      font-size: 16px;
-      font-weight: bold;
-      z-index: 2;
-          
+          top: -30px;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: #1e90ff;
+          color: #fff;
+          padding: 8px 20px;
+          border-radius: 20px 20px 20px 20px;
+          font-size: 16px;
+          font-weight: bold;
+          z-index: 2;
         }
 
         .score-content {
@@ -669,121 +669,123 @@
       }
 
       .learning-hub {
-  background-color: #f6f7fb;
-  padding: 80px 20px;
-  text-align: center;
-}
+        background-color: #f6f7fb;
+        padding: 80px 20px;
+        text-align: center;
+      }
 
-.learning-hub h2 {
-  font-size: 42px;
-  margin-bottom: 40px;
-  color: #111;
-}
+      .learning-hub h2 {
+        font-size: 42px;
+        margin-bottom: 40px;
+        color: #111;
+      }
 
-.hub-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-}
+      .hub-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+      }
 
-.hub-card {
-  background: #fff;
-  border-radius: 20px;
-  overflow: hidden;
-  max-width: 360px;
-  width: 100%;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  display: flex;
-  flex-direction: column;
-}
-ul{
-  color: black;
-}
-h4{
-  color: #292828;
-}
-.hub-card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
+      .hub-card {
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        max-width: 360px;
+        width: 100%;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+        display: flex;
+        flex-direction: column;
+      }
+      ul {
+        color: black;
+        padding-left: 20px;
+      }
+      h4 {
+        color: #292828;
+      }
+      .hub-card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
 
-.card-content {
-  padding: 20px;
-  text-align: left;
-}
+      .card-content {
+        padding: 20px;
+        text-align: left;
+      }
 
-.meta {
-  display: flex;
-  gap: 10px;
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 10px;
-  flex-wrap: wrap;
-}
+      .meta {
+        display: flex;
+        gap: 10px;
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+      }
 
-.tag {
-  background-color: #eef1f5;
-  color: #222;
-  font-weight: 600;
-  padding: 4px 8px;
-  border-radius: 6px;
-  font-size: 12px;
-}
+      .tag {
+        background-color: #eef1f5;
+        color: #222;
+        font-weight: 600;
+        padding: 4px 8px;
+        border-radius: 6px;
+        font-size: 12px;
+      }
 
-.card-content h3 {
-  font-size: 20px;
-  margin: 10px 0;
-  color: #111;
-}
+      .card-content h3 {
+        font-size: 20px;
+        margin: 10px 0;
+        color: #111;
+      }
 
-.card-content p {
-  font-size: 16px;
-  color: #444;
-  margin-bottom: 15px;
-}
+      .card-content p {
+        font-size: 16px;
+        color: #444;
+        margin-bottom: 15px;
+      }
 
-.card-content a {
-  color: #111;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 16px;
-}
+      .card-content a {
+        color: #111;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 16px;
+        padding-left: 3px;
+      }
 
-.card-content a:hover {
-  text-decoration: underline;
-}
+      .card-content a:hover {
+        text-decoration: underline;
+      }
 
-/* Responsive Design */
-@media (max-width: 992px) {
-  .hub-grid {
-    flex-direction: column;
-    align-items: center;
-  }
+      /* Responsive Design */
+      @media (max-width: 992px) {
+        .hub-grid {
+          flex-direction: column;
+          align-items: center;
+        }
 
-  .hub-card {
-    max-width: 90%;
-  }
-}
+        .hub-card {
+          max-width: 90%;
+        }
+      }
 
-@media (max-width: 600px) {
-  .learning-hub h2 {
-    font-size: 28px;
-  }
+      @media (max-width: 600px) {
+        .learning-hub h2 {
+          font-size: 28px;
+        }
 
-  .card-content h3 {
-    font-size: 18px;
-  }
+        .card-content h3 {
+          font-size: 18px;
+        }
 
-  .card-content p {
-    font-size: 14px;
-  }
+        .card-content p {
+          font-size: 14px;
+        }
 
-  .card-content a {
-    font-size: 14px;
-  }
-}
+        .card-content a {
+          font-size: 14px;
+        }
+      }
 
       .faq-section {
         background-color: #0f3259;
@@ -976,6 +978,7 @@ h4{
         color: #fff;
         font-size: 22px;
         text-decoration: none;
+        padding: 26px;
       }
 
       .footer {
@@ -1073,7 +1076,7 @@ h4{
     <section class="what-we-do">
       <div class="what-we-do-container">
         <div class="badge badge-bottom-left">
-          <img src="credit-score-icon.svg" alt="Icon" />
+          <!-- <img src="credit-score-icon.svg" alt="Icon" /> -->
           <span>Fast credit score increase</span>
         </div>
         <img src="house-image.jpg" alt="House" class="main-house-image" />
@@ -1121,7 +1124,7 @@ h4{
           <br /><br />
           <br />
         </p>
-        <button class="btn-info">Learn More</button><br><br>
+        <button class="btn-info">Learn More</button><br /><br />
         <img src="side-view-man-working-with-computer.jpg" alt="Buy a Home" />
       </div>
     </section>
@@ -1209,26 +1212,25 @@ h4{
       <div class="hub-grid">
         <!-- Card 1 -->
         <div class="hub-card">
-          <img
-            src="stack5.jpg"
-            alt="Down Payment Assistance"
-          />
+          <img src="stack5.jpg" alt="Down Payment Assistance" />
           <div class="card-content">
             <div class="meta">
               <span class="tag">Email Marketing</span>
               <span class="date">April 19, 2024</span>
             </div>
-            <h3>
-              Email Marketing
-            </h3>
+            <h3>Email Marketing</h3>
             <ul>
               <li>Campaign Strategy & Audience Segmentation</li>
               <li>Email Design & Content Creation</li>
               <li>Automation & Workflow Setup</li>
-              <li>Performance Tracking & Optimization</li><br>
-              <li style="list-style: none; position: relative;"><span style="position: absolute; left: -1em;">★</span> Logo Design, Promotions &amp; Advertising</li>
+              <li>Performance Tracking & Optimization</li>
+              <br />
+              <li style="list-style: none; position: relative">
+                <span style="position: absolute; left: -1em">★</span> Logo
+                Design, Promotions &amp; Advertising
+              </li>
             </ul>
-            
+
             <a href="#">Read More →</a>
           </div>
         </div>
@@ -1246,8 +1248,12 @@ h4{
               <li>Google Ads (Search, Display, Shopping)</li>
               <li>Campaign setup & optimization</li>
               <li>Landing page creation & A/B testing</li>
-              <li>Analytics & ROI tracking</li><br>
-              <li style="list-style: none; position: relative;"><span style="position: absolute; left: -1em;">★</span> Logo Design, Promotions &amp; Advertising</li>
+              <li>Analytics & ROI tracking</li>
+              <br />
+              <li style="list-style: none; position: relative">
+                <span style="position: absolute; left: -1em">★</span> Logo
+                Design, Promotions &amp; Advertising
+              </li>
             </ul>
             <a href="#">Read More →</a>
           </div>
@@ -1266,8 +1272,12 @@ h4{
               <li>On-page & off-page SEO</li>
               <li>Keyword research & content strategy</li>
               <li>Technical SEO audits</li>
-              <li>Local SEO for increased visibility</li><br>
-              <li style="list-style: none; position: relative;"><span style="position: absolute; left: -1em;">★</span> Logo Design, Promotions &amp; Advertising</li>
+              <li>Local SEO for increased visibility</li>
+              <br />
+              <li style="list-style: none; position: relative">
+                <span style="position: absolute; left: -1em">★</span> Logo
+                Design, Promotions &amp; Advertising
+              </li>
             </ul>
             <a href="#">Read More →</a>
           </div>
@@ -1279,7 +1289,7 @@ h4{
       <div class="hub-grid">
         <!-- Card 1 -->
         <div class="hub-card">
-          <img src="stcak1.jpg" alt="Down Payment Assistance">
+          <img src="stcak1.jpg" alt="Down Payment Assistance" />
           <div class="card-content">
             <div class="meta">
               <span class="tag">SMM</span>
@@ -1290,16 +1300,20 @@ h4{
               <li>Strategy & content creation</li>
               <li>Paid ad campaigns (Facebook, Instagram, LinkedIn, X)</li>
               <li>Community management & growth</li>
-              <li>Influencer collaborations</li><br>
-              <li style="list-style: none; position: relative;"><span style="position: absolute; left: -1em;">★</span> Logo Design, Promotions &amp; Advertising</li>
+              <li>Influencer collaborations</li>
+              <br />
+              <li style="list-style: none; position: relative">
+                <span style="position: absolute; left: -1em">★</span> Logo
+                Design, Promotions &amp; Advertising
+              </li>
             </ul>
             <a href="#">Read More →</a>
           </div>
         </div>
-    
+
         <!-- Card 2 -->
         <div class="hub-card">
-          <img src="stack3.jpg" alt="FICO Score">
+          <img src="stack3.jpg" alt="FICO Score" />
           <div class="card-content">
             <div class="meta">
               <span class="tag">Optimization</span>
@@ -1310,37 +1324,48 @@ h4{
               <li>User behavior tracking (GA4, Hotjar)</li>
               <li>Funnel analysis & optimization</li>
               <li>Automation & Workflow Setup</li>
-              <li>Performance Tracking & Optimization</li><br>
-              <li style="list-style: none; position: relative;"><span style="position: absolute; left: -1em;">★</span> Logo Design, Promotions &amp; Advertising</li>
+              <li>Performance Tracking & Optimization</li>
+              <br />
+              <li style="list-style: none; position: relative">
+                <span style="position: absolute; left: -1em">★</span> Logo
+                Design, Promotions &amp; Advertising
+              </li>
             </ul>
             <a href="#">Read More →</a>
           </div>
         </div>
-    
+
         <!-- Card 3 -->
         <div class="hub-card">
-          <img src="stack2.jpg" alt="Credit Monitoring Tools">
+          <img src="stack2.jpg" alt="Credit Monitoring Tools" />
           <div class="card-content">
             <div class="meta">
               <span class="tag">GMB</span>
               <span class="date">April 4, 2024</span>
             </div>
             <h3>Google My Business (GMB)</h3>
-            <h4>Experienced Professionals: Our team brings years of expertise to ensure quality and satisfaction.</h4><br>
+            <h4>
+              Experienced Professionals: Our team brings years of expertise to
+              ensure quality and satisfaction.
+            </h4>
+            <br />
             <ul>
               <li>Customer-Centric Approach</li>
               <li>Affordable Pricing</li>
               <li>Quick & Reliable Service</li>
               <li>Locally Trusted</li>
-              <li>Excellent Reviews</li><br>
-              <li style="list-style: none; position: relative;"><span style="position: absolute; left: -1em;">★</span> Logo Design, Promotions &amp; Advertising</li>
+              <li>Excellent Reviews</li>
+              <br />
+              <li style="list-style: none; position: relative">
+                <span style="position: absolute; left: -1em">★</span> Logo
+                Design, Promotions &amp; Advertising
+              </li>
             </ul>
             <a href="#">Read More →</a>
           </div>
         </div>
       </div>
     </section>
-    
 
     <section class="faq-section">
       <div class="faq-container">
